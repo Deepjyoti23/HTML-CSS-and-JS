@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            font-size: 16px ;
+        }
+        h4{
+            margin:0;
+            line-height: 60px;
+            padding-left: 10px;
+        }
+        body{
+            margin: 0;
+        }
+        nav{
+            background-color: navy;
+            height: 60px;
+            color: white;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        .box{
+            background-color: green;
+            height: 200px;
+            width: 200px;
+            margin: 20px; 
+        }
+        .boxes{
+            margin-top: 80px;
+        }
+        .rel-position{
+            /* z-index */
+            position: relative;
+            top: 10px;
+            font-size: 24px;
+        }
+        .abs-position{
+            position: absolute;
+            height: 50px;
+            width: 80%;
+            background-color: orange;
+            top: 0;
+            left: 0;
+            /* rem-relative to root
+            em-relative to parent */
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h4>This is the navbar</h4>
+    </nav>
+    <div class="boxes">
+        <div class="box rel-position">
+            <div class="abs-position">Some Text</div>
+        </div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html> 
